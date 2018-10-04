@@ -108,7 +108,7 @@ describe "Blog Post App" do
 
     it "submits the form via a patch request" do
       visit "/posts/#{@post2.id}/edit"
-      expect(find("#hidden", :visible => false).value).to eq("patch")
+      expect(find("#{}hidden", :visible => false).value).to eq("patch")
     end
 
   end
